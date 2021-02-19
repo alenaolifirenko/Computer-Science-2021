@@ -27,3 +27,4 @@ int nomain(int argc, char ** argv)
 	return EXIT_SUCCESS;
 }
 //message from new_branch
+//был конфликт при слиянии
