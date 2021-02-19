@@ -13,7 +13,7 @@ void print_clock_data()
 	std::cout << "is_steady: " << std::boolalpha << C::is_steady << std::endl;
 }
 
-int main(int argc, char ** argv)
+int nomain(int argc, char ** argv)
 {
 	std::cout << "system_clock: " << std::endl;
 	print_clock_data < std::chrono::system_clock > ();
