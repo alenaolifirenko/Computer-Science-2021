@@ -3,6 +3,7 @@
 #include <iostream>
 
 //new line
+//new line
 template < typename C >
 void print_clock_data()
 {
