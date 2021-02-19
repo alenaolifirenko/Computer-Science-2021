@@ -1,9 +1,7 @@
 #include <chrono>
 #include <iomanip>
 #include <iostream>
-//new line
-//new line
-//new line
+//message from master
 template < typename C >
 void print_clock_data()
 {
