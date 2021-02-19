@@ -2,10 +2,11 @@
 #include <iomanip>
 #include <iostream>
 
+//new line
 template < typename C >
 void print_clock_data()
 {
-	std::cout << "precision: " << std::setprecision(12) << std::fixed << 
+	std::cout << "precision: " << std::setprecision(12) << std::fixed <<
 		1.0 * C::period::num / C::period::den << " (seconds)" << std::endl;
 
 	std::cout << "is_steady: " << std::boolalpha << C::is_steady << std::endl;
