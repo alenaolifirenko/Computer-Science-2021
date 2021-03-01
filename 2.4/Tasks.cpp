@@ -109,7 +109,17 @@ int main()
     std::for_each(std::begin(v3), std::end(v3), [](auto x) {std::cout << x << ' '; });
     //Write
 
-
+    std::vector <int> vec(50);
+    std::vector <int> vec1(50);
+    std::generate_n(std::begin(vec), 50, [&dre, &uid]() {return uid(dre); });
+    vec1 = vec;
+    int counter = 0;
+    std::sort(std::begin(vec), std::end(vec), [&counter](int i, int j) { counter++; return (i < j); });
+    std::cout << std::endl << std::endl << "std::sort " << counter << std::endl;
+    counter = 0;
+    std::nth_element(std::begin(vec1), std::next(std::begin(vec1), 10), std::end(vec1), [&counter](int i, int j) { counter++; return (i < j); });
+    std::cout << "std::nth_element " << counter << std::endl;
+    //additional task
 
     return 0;
 }
