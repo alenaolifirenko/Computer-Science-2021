@@ -8,8 +8,8 @@ int main(int argc, char** argv)
 	std::string data = R"(vishalchovatiya@ymail.com vishalchovatiya@mail.comhgdvjhgsyfgbxzhg
 	,,....  hjgd@@mail.ruhf___&&&63j@rambler.ru)";
 
-	std::regex pattern_1(R"(\w+@(?:mail|rambler)+\.(?:com|ru))");
-	
+	std::regex pattern_1(R"(\w+@[[:alpha:]]+\.[[:alpha:]]{2,3})");
+
 
 	std::copy(
 		std::sregex_token_iterator(data.begin(), data.end(), pattern_1),
