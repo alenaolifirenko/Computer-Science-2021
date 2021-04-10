@@ -10,7 +10,6 @@ int main(int argc, char** argv)
 
 	std::regex pattern_1(R"(\w+@[[:alpha:]]+\.[[:alpha:]]{2,3})");
 
-
 	std::copy(
 		std::sregex_token_iterator(data.begin(), data.end(), pattern_1),
 		std::sregex_token_iterator(),
